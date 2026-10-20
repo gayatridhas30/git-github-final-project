@@ -15,7 +15,7 @@
 | Repository | Part of the IBM "Introduction to Git and GitHub" Final Project |
 
 ## Description
-This project is a simple, interactive command-line calcultor that computes the
+This project is a simple, interactive command-line calculator that computes the
 **simple interest** for a given principal amount, rate of interest and time period.
 
 The formula used is:
