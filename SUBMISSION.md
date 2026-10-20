@@ -1,4 +1,4 @@
-# FINAL PROJECT — COMPLETE SUBMISSION (All 9 Tasks)
+# FINAL PROJECT — COMPLETE SUBMISSION (All Tasks)
 
 **Student:** Gayatri Dhas (GitHub: gayatridhas30)
 **Repository:** https://github.com/gayatridhas30/git-github-final-project
@@ -36,8 +36,41 @@ https://github.com/gayatridhas30/git-github-final-project/blob/main/simple-inter
 
 ## PART 2 — Git CLI (8 points)
 
-### Task 6 (2 points) — forked-repo
+### Part 2 Task 1 (2 pts) — URL of the forked repository
+```
+https://github.com/gayatridhas30/mcino-Introduction-to-Git-and-GitHub
+```
 
+### Part 2 Task 2 (2 pts) — Screenshot of the first merge
+**File to upload:**
+```
+D:\git-github-final-project\merge-screenshot.png
+```
+(also copied to Desktop: `C:\Users\Gayatri Dhas\OneDrive\Desktop\merge-screenshot.png`)
+
+The screenshot shows a live terminal replay of the real merge:
+- `git checkout main` → Switched to branch 'main'
+- `git merge bug-fix-typo` → `Updating ad95b0a..bdad08f` / `Fast-forward` / `simple-interest.sh | 2 +-` / **`1 file changed, 1 insertion(+), 1 deletion(-)`**
+
+### Part 2 Task 3 (2 pts) — URL of the pull request
+```
+https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/12643
+```
+(The PR was opened from fork `gayatridhas30/mcino-Introduction-to-Git-and-GitHub`.
+The repo's `close_pr.yml` bot auto-closes it with: "Congratulations! You have completed
+the lab. Closing for maintainence purpose." — this is the lab's designed behaviour.)
+
+### Part 2 Task 4 (2 pts) — URL of the Branches page
+```
+https://github.com/gayatridhas30/mcino-Introduction-to-Git-and-GitHub/branches
+```
+(Displays `main` and `bug-fix-typo` with their up-to-date status.)
+
+---
+
+## Supporting evidence (terminal outputs, also in this repo)
+
+### forked-repo
 ```
 $ curl -s https://api.github.com/repos/gayatridhas30/mcino-Introduction-to-Git-and-GitHub | grep -E '"(full_name|fork)":'
   "full_name": "gayatridhas30/mcino-Introduction-to-Git-and-GitHub",
@@ -48,8 +81,7 @@ $ curl -s https://api.github.com/repos/gayatridhas30/mcino-Introduction-to-Git-a
     "fork": false,
 ```
 
-### Task 7 (2 points) — merge_branches
-
+### merge_branches
 ```
 $ git checkout main
 Switched to branch 'main'
@@ -62,8 +94,7 @@ Fast-forward
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-### Task 8 (2 points) — bug-fix-revert
-
+### bug-fix-revert
 ```
 $ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/12643 | grep -E '"(html_url|state|full_name|merged)":'
   "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/12643",
@@ -80,8 +111,7 @@ $ curl -s https://api.github.com/repos/ibm-developer-skills-network/mcino-Introd
   "merged": false,
 ```
 
-### Task 9 (2 points) — github-branches
-
+### github-branches
 ```
 $ git branch -a
   bug-fix-typo
@@ -97,3 +127,4 @@ $ git branch -a
 - Public repo: https://github.com/gayatridhas30/git-github-final-project
 - Fork of IBM repo: https://github.com/gayatridhas30/mcino-Introduction-to-Git-and-GitHub
 - Pull request: https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/12643
+- Branches page: https://github.com/gayatridhas30/mcino-Introduction-to-Git-and-GitHub/branches
